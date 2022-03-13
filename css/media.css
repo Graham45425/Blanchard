@@ -999,6 +999,9 @@
   .tabs {
     columns: 1;
   }
+  .accordion__pattern {
+    display: none;
+  }
 
   .catalog__img {
     margin-bottom: 11px;
