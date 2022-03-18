@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Project swiper
   const swiper4 = new Swiper('.projects__swiper', {
     slidesPerView: 1,
-    loop: true,
+    loop: false,
     spaceBetween: 34,
     slidesPerGroup: 1,
     breakpoints: {

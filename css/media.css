@@ -125,6 +125,10 @@
     height: 29px;
   }
 
+  .header-bottom__selectors {
+    margin-right: 0;
+  }
+
   .header-bottom__list:last-child .header-bottom__dropdown-wrapper {
     left: -98px;
   }

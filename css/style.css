@@ -54,8 +54,14 @@ body {
   color: var(--mine-shaft-color);
 }
 
+/* Polyfill focus-visible */
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+/* Reinstate scrolling for non-JS clients */
+.simplebar-content-wrapper {
+  overflow: auto;
 }
 
 .hyphens {
@@ -476,6 +482,7 @@ body {
   align-items: center;
   margin-top: 1px;
   margin-left: -2px;
+  margin-right: 300px;
 }
 
 .header-bottom__list {
@@ -1544,7 +1551,7 @@ body {
 .events__swiper {
   width: 100%;
   max-width: 1600px;
-  height: 700px;
+  min-height: 700px;
 }
 
 .events__btn-next, .events__btn-prev {
@@ -1643,6 +1650,7 @@ body {
 .events__slide {
   display: flex;
   flex-direction: column;
+  height: auto;
   outline: 1px solid var(--silver-color);
   outline-offset: -1px;
 }
@@ -1690,6 +1698,7 @@ body {
 
 .events__desc {
   margin-bottom: 20px;
+  height: 100%;
 }
 
 .events__link {
